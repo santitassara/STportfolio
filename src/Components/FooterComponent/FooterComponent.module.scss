@@ -1,0 +1,37 @@
+.FooterComponent-light {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid;
+  border-color: black;
+  height: 10vh;
+  background-color: white;
+  &-img{
+    display: flex;
+    justify-content: space-evenly
+  }
+
+  img:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: all 0.3s;
+  }
+}
+
+.FooterComponent-dark {
+  height: 20vh;
+  border-top: 1px solid;
+  border-color: white;
+  background-color: black;
+
+  &-img{
+    display: flex;
+    justify-content: space-evenly
+  }
+
+  img:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+}

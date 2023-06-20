@@ -1,0 +1,16 @@
+{
+  "props": {
+    "FEProps": {
+      "imgSrc": "./img/front-end-ilust.jpeg",
+      "title": "Front End Developer",
+      "text": "React, Redux, React-Context, Bootstrap",
+      "buttonText": "buttontext"
+    },
+    "IOTProps":{
+      "imgSrc": "./img/IOT-ilust.jpg",
+      "title": "IOT Developer",
+      "text": "Arduino, ESP, Linux, C++",
+      "buttonText": "buttontext"
+    }
+  }
+}

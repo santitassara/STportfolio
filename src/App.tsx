@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import Home from './Pages/Home';
+import './App.scss';
+import { ThemeContextProvider } from './context/ThemeContext';
+import{BrowserRouter, Routes, Route} from "react-router-dom"
+import NavBarComponent from './Components/NavBarComponent/NavBarComponent';
+import FooterComponent from './Components/FooterComponent/FooterComponent';
+import ServicesComponent from './Components/ServicesComponent/ServicesComponent';
+import ExperienceComponent from './Components/ExperienceComponent/ExperienceComponent';
+import ProjectsComponent from './Components/ProjectsComponent/ProjectsComponent';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeContextProvider>
+      <BrowserRouter>
+        <NavBarComponent/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Services" element={<ServicesComponent />} />
+          <Route path="/Experience" element={<ExperienceComponent />} />
+          <Route path="/Projects" element={<ProjectsComponent />} />
+        </Routes>
+      <FooterComponent/>
+      </BrowserRouter>
+    </ThemeContextProvider>
+    
   );
 }
 
