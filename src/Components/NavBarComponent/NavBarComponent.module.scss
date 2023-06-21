@@ -6,6 +6,7 @@
   background-color: black;
   &-container{
     &-brand{
+      cursor: pointer;
       text-decoration: none;
       font-weight: 900;
       font-size: 2em;
@@ -21,6 +22,7 @@
       justify-content: space-around;
       width: 30em;
       &-link{
+        cursor: pointer;
         text-decoration: none;
         font-family:'Poppins', sans-serif;
         font-weight: bolder;
@@ -44,6 +46,7 @@
   background-color: white;
   &-container{
     &-brand{
+      cursor: pointer;
       font-family:'Poppins', sans-serif;;
       font-weight: 900;
       font-size: 2em;
@@ -58,6 +61,7 @@
       justify-content: space-around;
       width: 30em;
       &-link{
+        cursor: pointer;
         text-decoration: none;
         font-family:'Poppins', sans-serif;
         font-weight: bolder;

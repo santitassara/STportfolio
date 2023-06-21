@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Prompt:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Prompt:wght@500&display=swap');
 .HomeComponent-dark {
-  height: 80vh;
+  height: 100vh;
   background-color: #000000;
   display: flex;
   flex-direction: row;
@@ -31,17 +31,40 @@
     &-description {
       width: 40em;
     }
+    &-div{
+      height: 15vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+     &-button {
+      background: linear-gradient(180deg,#bd3030 26.71%,rgb(177, 40, 38) 99.36%);
+      border: none;
+      border-radius: 34px;
+      box-shadow: 0 5px 24px 3px red;
+      color: #fff;
+      font-size: 16px;
+      padding: 11px 26px;
+      text-decoration: none;
+      &:hover{
+        background: linear-gradient(180deg,white 26.71%,white 99.36%);
+        border: solid 1px;
+        color: red;
+        font-family:'Prompt', sans-serif;
+      }
+      
+    } 
+    }
   }
 
   &-img {
     img {
-      height: 30em;
+      height: 50vh;
     }
   }
 }
 
 .HomeComponent-light {
-  height: 80vh;
+  height: 100vh;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -58,16 +81,38 @@
     font-weight: bold;
 
     &-1 {
-      font-size: 3em;
+      font-size: 5em;
     }
 
     &-2 {
-      font-size: 3em;
+      font-size: 5em;
       color: blue;
     }
 
     &-description {
       width: 40em;
+    }
+    &-div{
+      height: 15vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+     &-button {
+      background: linear-gradient(180deg,#3037bd 26.71%,rgb(40, 38, 177) 99.36%);
+      border: none;
+      border-radius: 34px;
+      box-shadow: 0 5px 24px 3px rgb(4, 0, 255);
+      color: #fff;
+      font-size: 16px;
+      padding: 11px 26px;
+      text-decoration: none;
+      &:hover{
+        background: linear-gradient(180deg,white 26.71%,white 99.36%);
+        color: rgb(0, 30, 255);
+        border: solid 1px;
+        font-family:'Prompt', sans-serif;
+      }
+    } 
     }
   }
 

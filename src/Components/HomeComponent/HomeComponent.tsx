@@ -30,10 +30,18 @@ export default function HomeComponent() {
             When I'm not in front the computer I like to play piano and rehearse with my music band.
             I'm also a FIDE Chess player with FIDE ELO and a soccer player.
           </span>
+          <div className={classes[`HomeComponent-${theme}-text-div`]} >
+            
+              <button className={classes[`HomeComponent-${theme}-text-div-button`]} >
+                Hire Me!
+              </button>
+            
+          </div>
         </div>
         <div className={classes[`HomeComponent-${theme}-img`]}>
           <img src="./img/NicePng_wormhole-png_2306418.png" alt="" />
         </div>
+        
       </div>
       <ServicesComponent/>
       <ExperienceComponent/>

@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Prompt:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Prompt:wght@500&display=swap');
+
+.ServicesComponent-Main-dark {
+  height: 100vh;
+  background-color: #000000;
+}
+
+.ServicesComponent-Main-light {
+  height: 100vh;
+  background-color: #ffffff;
+}
+
 .ServicesComponent-dark {
   height: 80vh;
   background-color: #000000;
@@ -7,22 +18,24 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  
+
 
   //height: 50em;
   &-text {
+
     display: flex;
     color: #ffffff;
     flex-direction: column;
     //justify-content: flex-start;
     align-items: start;
-    font-family:'Prompt', sans-serif;
+    font-family: 'Prompt', sans-serif;
     font-weight: bold;
+    margin-top: -10vh;
 
     &-1 {
       font-size: 3em;
     }
-    
+
     &-2 {
       color: red;
       font-size: 3em;
@@ -31,22 +44,50 @@
     &-description {
       width: 30em;
     }
+
+    &-div {
+      height: 15vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &-button {
+        background: linear-gradient(180deg, #bd3030 26.71%, rgb(177, 40, 38) 99.36%);
+        border: none;
+        border-radius: 34px;
+        box-shadow: 0 5px 24px 3px red;
+        color: #fff;
+        font-size: 16px;
+        padding: 11px 26px;
+        text-decoration: none;
+
+        &:hover {
+          background: linear-gradient(180deg, white 26.71%, white 99.36%);
+          border: solid 1px;
+          color: red;
+          font-family: 'Prompt', sans-serif;
+        }
+
+      }
+    }
+
   }
 
   &-cards {
     position: relative;
-    
-   
-    &-fe{
+
+
+    &-fe {
       position: relative;
-      bottom:-4em;
+      bottom: -4em;
       left: 8rem;
     }
-    &-iot{
+
+    &-iot {
       position: relative;
-       bottom: -7em;
-       left: -20em;
-    //  margin-top: 50em;
+      bottom: -7em;
+      left: -20em;
+      //  margin-top: 50em;
     }
   }
 }
@@ -65,7 +106,7 @@
     flex-direction: column;
     //justify-content: flex-start;
     align-items: start;
-    font-family:'Prompt', sans-serif;
+    font-family: 'Prompt', sans-serif;
     font-weight: bold;
 
     &-1 {
@@ -80,32 +121,60 @@
     &-description {
       width: 30em;
     }
+
+    &-div {
+      height: 15vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &-button {
+        background: linear-gradient(180deg, #3037bd 26.71%, rgb(40, 38, 177) 99.36%);
+        border: none;
+        border-radius: 34px;
+        box-shadow: 0 5px 24px 3px rgb(4, 0, 255);
+        color: #fff;
+        font-size: 16px;
+        padding: 11px 26px;
+        text-decoration: none;
+
+        &:hover {
+          background: linear-gradient(180deg, white 26.71%, white 99.36%);
+          color: rgb(0, 30, 255);
+          border: solid 1px;
+          font-family: 'Prompt', sans-serif;
+        }
+      }
+    }
   }
 
   &-cards {
     position: relative;
-    
+
     @keyframes slideInFromLeft {
       0% {
         transform: translateX(-100%);
       }
+
       100% {
         transform: translateX(0);
       }
     }
-    &-fe{
-      
+
+    &-fe {
+
       position: relative;
-      bottom:-8em;
+      bottom: -8em;
       left: 8rem;
       // animation: 1s ease-out 0s 1 slideInFromLeft;
       // padding: 30px;
     }
-    &-iot{
+
+    &-iot {
       position: relative;
-        bottom: -7em;
-       left: -15em;
-    //  margin-top: 50em;
+      bottom: -7em;
+      left: -15em;
+      //  margin-top: 50em;
     }
   }
 }
