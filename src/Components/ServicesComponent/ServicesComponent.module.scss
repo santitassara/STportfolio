@@ -22,7 +22,7 @@
 
   //height: 50em;
   &-text {
-
+    width: 35vw;
     display: flex;
     color: #ffffff;
     flex-direction: column;
@@ -75,7 +75,7 @@
 
   &-cards {
     position: relative;
-
+    width: 25vw;
 
     &-fe {
       position: relative;
@@ -85,7 +85,7 @@
 
     &-iot {
       position: relative;
-      bottom: -7em;
+      bottom: -5em;
       left: -20em;
       //  margin-top: 50em;
     }

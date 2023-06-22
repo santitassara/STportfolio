@@ -4,6 +4,7 @@ import { useThemeContext } from "../../context/ThemeContext";
 import ExperienceComponent from "../ExperienceComponent/ExperienceComponent";
 import ServicesComponent from "../ServicesComponent/ServicesComponent";
 import ProjectsComponent from "../ProjectsComponent/ProjectsComponent";
+import ContactComponent from "../ContactComponent/ContactComponent";
 
 export default function HomeComponent() {
 
@@ -46,6 +47,7 @@ export default function HomeComponent() {
       <ServicesComponent/>
       <ExperienceComponent/>
       <ProjectsComponent/>
+      <ContactComponent/>
 
     </div>
   )
