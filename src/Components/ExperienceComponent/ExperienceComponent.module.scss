@@ -12,7 +12,7 @@
 
   //height: 50em;
   &-text {
-    
+
     display: flex;
     color: #ffffff;
     flex-direction: column;
@@ -20,6 +20,7 @@
     align-items: start;
     font-family: 'Prompt', sans-serif;
     font-weight: bold;
+    width: 35vw;
 
     &-1 {
       font-size: 3em;
@@ -33,6 +34,33 @@
     &-description {
       width: 35vw;
     }
+
+    &-div {
+      height: 15vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &-button {
+        background: linear-gradient(180deg, #bd3030 26.71%, rgb(177, 40, 38) 99.36%);
+        border: none;
+        border-radius: 34px;
+        box-shadow: 0 5px 24px 3px red;
+        color: #fff;
+        font-size: 16px;
+        padding: 11px 26px;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+          background: linear-gradient(180deg, white 26.71%, white 99.36%);
+          border: solid 1px;
+          color: red;
+          font-family: 'Prompt', sans-serif;
+        }
+
+      }
+    }
   }
 
   &-img {
@@ -41,6 +69,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
     //height: 70vh;
     img {
       height: 3em;
@@ -50,7 +79,8 @@
       width: 35vw;
       display: flex;
       justify-content: space-evenly;
-      &-js{
+
+      &-js {
         height: 8em;
         width: 8em;
         border: 3px solid;
@@ -60,11 +90,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        img{
+
+        img {
           height: 5em;
         }
       }
-      &-ts{
+
+      &-ts {
         height: 8em;
         width: 8em;
         border: 3px solid;
@@ -74,7 +106,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        img{
+
+        img {
           height: 4em;
         }
       }
@@ -84,7 +117,8 @@
       width: 35vw;
       display: flex;
       justify-content: space-evenly;
-      &-react{
+
+      &-react {
         height: 8em;
         width: 8em;
         border: 3px solid;
@@ -94,11 +128,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        img{
+
+        img {
           height: 5em;
         }
       }
-      &-redux{
+
+      &-redux {
         height: 8em;
         width: 8em;
         border: 3px solid;
@@ -108,7 +144,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        img{
+
+        img {
           height: 5em;
         }
       }
@@ -118,7 +155,8 @@
       width: 35vw;
       display: flex;
       justify-content: space-evenly;
-      &-cpp{
+
+      &-cpp {
         height: 8em;
         width: 8em;
         border: 3px solid;
@@ -128,11 +166,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        img{
+
+        img {
           height: 5em;
         }
       }
-      &-arduino{
+
+      &-arduino {
         height: 8em;
         width: 8em;
         border: 3px solid;
@@ -142,7 +182,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        img{
+
+        img {
           height: 5em;
         }
       }
@@ -166,6 +207,7 @@
     align-items: start;
     font-family: 'Prompt', sans-serif;
     font-weight: bold;
+    width: 35vw;
 
     &-1 {
       font-size: 3em;
@@ -178,6 +220,33 @@
 
     &-description {
       width: 35vw;
+    }
+
+    &-div {
+      height: 15vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &-button {
+        background: linear-gradient(180deg, #bd3030 26.71%, rgb(177, 40, 38) 99.36%);
+        border: none;
+        border-radius: 34px;
+        box-shadow: 0 5px 24px 3px red;
+        color: #fff;
+        font-size: 16px;
+        padding: 11px 26px;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+          background: linear-gradient(180deg, white 26.71%, white 99.36%);
+          border: solid 1px;
+          color: red;
+          font-family: 'Prompt', sans-serif;
+        }
+
+      }
     }
   }
 
@@ -196,7 +265,8 @@
       width: 35vw;
       display: flex;
       justify-content: space-evenly;
-      &-js{
+
+      &-js {
         height: 8em;
         width: 8em;
         border: 3px solid;
@@ -206,11 +276,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        img{
+
+        img {
           height: 5em;
         }
       }
-      &-ts{
+
+      &-ts {
         height: 8em;
         width: 8em;
         border: 3px solid;
@@ -220,7 +292,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        img{
+
+        img {
           height: 4em;
         }
       }
@@ -230,7 +303,8 @@
       width: 35vw;
       display: flex;
       justify-content: space-evenly;
-      &-react{
+
+      &-react {
         height: 8em;
         width: 8em;
         border: 3px solid;
@@ -240,11 +314,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        img{
+
+        img {
           height: 5em;
         }
       }
-      &-redux{
+
+      &-redux {
         height: 8em;
         width: 8em;
         border: 3px solid;
@@ -254,7 +330,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        img{
+
+        img {
           height: 5em;
         }
       }
@@ -264,7 +341,8 @@
       width: 35vw;
       display: flex;
       justify-content: space-evenly;
-      &-cpp{
+
+      &-cpp {
         height: 8em;
         width: 8em;
         border: 3px solid;
@@ -274,11 +352,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        img{
+
+        img {
           height: 5em;
         }
       }
-      &-arduino{
+
+      &-arduino {
         height: 8em;
         width: 8em;
         border: 3px solid;
@@ -288,7 +368,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        img{
+
+        img {
           height: 5em;
         }
       }

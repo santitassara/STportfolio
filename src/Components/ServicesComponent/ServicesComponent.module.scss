@@ -13,10 +13,10 @@
 
 .ServicesComponent-dark {
   height: 80vh;
-  background-color: #000000;
+  background-color: black;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 
 
@@ -75,18 +75,18 @@
 
   &-cards {
     position: relative;
-    width: 25vw;
+    width: 35vw;
 
     &-fe {
       position: relative;
       bottom: -4em;
-      left: 8rem;
+      margin-left: 15rem;
     }
 
     &-iot {
       position: relative;
-      bottom: -5em;
-      left: -20em;
+      bottom: -7em;
+      left: -8em;
       //  margin-top: 50em;
     }
   }
@@ -104,7 +104,7 @@
   &-text {
     display: flex;
     flex-direction: column;
-    //justify-content: flex-start;
+    width: 35vw;
     align-items: start;
     font-family: 'Prompt', sans-serif;
     font-weight: bold;
@@ -150,22 +150,13 @@
 
   &-cards {
     position: relative;
-
-    @keyframes slideInFromLeft {
-      0% {
-        transform: translateX(-100%);
-      }
-
-      100% {
-        transform: translateX(0);
-      }
-    }
+    width: 35vw;
 
     &-fe {
 
       position: relative;
-      bottom: -8em;
-      left: 8rem;
+      bottom: -4em;
+      margin-left: 15rem;
       // animation: 1s ease-out 0s 1 slideInFromLeft;
       // padding: 30px;
     }
@@ -173,7 +164,7 @@
     &-iot {
       position: relative;
       bottom: -7em;
-      left: -15em;
+      left: -8em;
       //  margin-top: 50em;
     }
   }

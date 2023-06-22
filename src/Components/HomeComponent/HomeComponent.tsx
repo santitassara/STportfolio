@@ -5,7 +5,7 @@ import ExperienceComponent from "../ExperienceComponent/ExperienceComponent";
 import ServicesComponent from "../ServicesComponent/ServicesComponent";
 import ProjectsComponent from "../ProjectsComponent/ProjectsComponent";
 import ContactComponent from "../ContactComponent/ContactComponent";
-
+import { Link as LinkScroll} from "react-scroll/modules"
 export default function HomeComponent() {
 
   const themeContext = useThemeContext();
@@ -33,9 +33,9 @@ export default function HomeComponent() {
           </span>
           <div className={classes[`HomeComponent-${theme}-text-div`]} >
             
-              <button className={classes[`HomeComponent-${theme}-text-div-button`]} >
-                Hire Me!
-              </button>
+          <LinkScroll activeClass="active" spy={true} smooth={true}
+           offset={0} duration={500} className={classes[`HomeComponent-${theme}-text-div-button`]} 
+          to="contact">Hire Me!</LinkScroll>
             
           </div>
         </div>

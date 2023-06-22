@@ -3,7 +3,7 @@ import { useThemeContext } from "../../context/ThemeContext";
 import classes from "./ExperienceComponent.module.scss"
 import AOS from 'aos';
 import 'aos/dist/aos.css'
-
+import { Link as LinkScroll} from "react-scroll/modules"
 export default function ExperienceComponent() {
 
   useEffect(() => {
@@ -29,6 +29,14 @@ export default function ExperienceComponent() {
             These are the main tools, frameworks, programming languages...
             that I use every day.
           </span>
+          <div className={classes[`ExperienceComponent-${theme}-text-div`]} >
+
+          <LinkScroll activeClass="active" spy={true} smooth={true}
+           offset={0} duration={500} className={classes[`ExperienceComponent-${theme}-text-div-button`]} 
+          to="contact">Hire Me!</LinkScroll>
+              
+            
+          </div>
         </div>
         <div className={classes[`ExperienceComponent-${theme}-img`]}>
           <div className={classes[`ExperienceComponent-${theme}-img-jsMix`]}>
