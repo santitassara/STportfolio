@@ -4,13 +4,43 @@
       "imgSrc": "./img/front-end-ilust.jpeg",
       "title": "Front End Developer",
       "text": "React, Redux, React-Context, Bootstrap",
-      "buttonText": "buttontext"
+      "buttonText": "buttontext",
+      "languages": {
+        "js": {
+          "Img": "./img/JSLOGO.png",
+          "Alt": "jsLogo"
+        },
+        "ts": {
+          "Img":"./img/TypescriptLogo.png",
+          "Alt":"tsLogo"
+        },
+        "react":{
+          "Img":"./img/reactLogo.png",
+          "Alt":"reactLogo"
+        },
+        "redux":{
+          "Img":"./img/ReduxLogo.png",
+          "Alt":"reduxLogo"
+          }
+
+      }
     },
-    "IOTProps":{
+    "IOTProps": {
       "imgSrc": "./img/IOT-ilust.jpg",
       "title": "IOT Developer",
       "text": "Arduino, ESP, Linux, C++",
-      "buttonText": "buttontext"
+      "buttonText": "buttontext",
+      "languages":{
+        "cpp":{
+          "Img":"./img/cppLogo.png",
+          "Alt":"c++Logo"
+        },
+        "arduino":{
+          "Img":"./img/arduino-logo.png",
+          "Alt":"arduinoLogo"
+        }
+
+      }
     }
   }
 }

@@ -19,9 +19,12 @@
 }
 
 .FooterComponent-dark {
-  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   border-top: 1px solid;
   border-color: white;
+  height: 10vh;
   background-color: black;
 
   &-img{
