@@ -3,7 +3,9 @@ import { useThemeContext } from "../../context/ThemeContext";
 import classes from "./ExperienceComponent.module.scss"
 import AOS from 'aos';
 import 'aos/dist/aos.css'
-import { Link as LinkScroll} from "react-scroll/modules"
+import { Link as LinkScroll } from "react-scroll/modules"
+import data from "../../Data/data.json"
+
 export default function ExperienceComponent() {
 
   useEffect(() => {
@@ -11,6 +13,9 @@ export default function ExperienceComponent() {
 
   }, [])
 
+  console.log(Object.values(data.props.FEProps.languages));
+  const feLangs = Object.values(data.props.FEProps.languages).slice()
+  const iotLangs = Object.values(data.props.IOTProps.languages)
   const themeContext = useThemeContext();
 
   const theme = themeContext.theme;
@@ -31,15 +36,30 @@ export default function ExperienceComponent() {
           </span>
           <div className={classes[`ExperienceComponent-${theme}-text-div`]} >
 
-          <LinkScroll activeClass="active" spy={true} smooth={true}
-           offset={0} duration={500} className={classes[`ExperienceComponent-${theme}-text-div-button`]} 
-          to="contact">Hire Me!</LinkScroll>
-              
-            
+            <LinkScroll activeClass="active" spy={true} smooth={true}
+              offset={0} duration={500} className={classes[`ExperienceComponent-${theme}-text-div-button`]}
+              to="contact">Hire Me!</LinkScroll>
           </div>
+
         </div>
-        <div className={classes[`ExperienceComponent-${theme}-img`]}>
-          <div className={classes[`ExperienceComponent-${theme}-img-jsMix`]}>
+          <div className={classes[`ExperienceComponent-${theme}-img`]}>
+            <div className={classes[`ExperienceComponent-${theme}-img-jsMix`]}>
+              {feLangs.slice(2,4).map((e) => <div className={classes[`ExperienceComponent-${theme}-img-jsMix-js`]} data-aos="fade-right" data-aos-duration="500" ><img src={e.Img} alt={e.Alt} /></div>)}
+            </div>
+            <div className={classes[`ExperienceComponent-${theme}-img-jsMix`]}>
+              {feLangs.slice(0,2).map((e) => <div className={classes[`ExperienceComponent-${theme}-img-jsMix-js`]} data-aos="fade-right" data-aos-duration="500" ><img src={e.Img} alt={e.Alt} /></div>)}
+            </div>
+            <div className={classes[`ExperienceComponent-${theme}-img-arduinoMix`]}>
+            {iotLangs.map((e) => <div className={classes[`ExperienceComponent-${theme}-img-jsMix-js`]} data-aos="fade-right" data-aos-duration="500" ><img src={e.Img} alt={e.Alt} /></div>)}
+
+            </div>
+          </div>
+      </div>
+    </div>
+  )
+}
+
+{/* <div className={classes[`ExperienceComponent-${theme}-img-jsMix`]}>
             <div className={classes[`ExperienceComponent-${theme}-img-jsMix-js`]} data-aos="fade-right" data-aos-duration="500">
               <img src="./img/JSLOGO.png" alt="jslogo" />
             </div>
@@ -62,9 +82,4 @@ export default function ExperienceComponent() {
             <div className={classes[`ExperienceComponent-${theme}-img-arduinoMix-arduino`]} data-aos="fade-left" data-aos-duration="500">
               <img src="./img/arduino-logo.png" alt="arduinologo" />
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
+          </div> */}

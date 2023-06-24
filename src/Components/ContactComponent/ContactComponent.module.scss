@@ -6,29 +6,31 @@
     background-color: #000000;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    
-  
+
+
     //height: 50em;
     &-text {
-      display: flex;
-      color: #ffffff;
-      flex-direction: column;
-      //justify-content: flex-start;
-      align-items: start;
-      font-family:'Prompt', sans-serif;
-      font-weight: bold;
-  
-      &-1 {
-        font-size: 3em;
-      }
-      
-      &-2 {
-        color: red;
-        font-size: 3em;
-      }
+        display: flex;
+        color: #ffffff;
+        flex-direction: column;
+        //justify-content: flex-start;
+        align-items: start;
+        font-family: 'Prompt', sans-serif;
+        font-weight: bold;
+        width: 35vw;
+
+        &-1 {
+            font-size: 3em;
+        }
+
+        &-2 {
+            color: red;
+            font-size: 3em;
+        }
     }
+
     &-form {
         height: 40vh;
         display: flex;
@@ -63,20 +65,76 @@
 .ContactComponent-light {
     height: 80vh;
     background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &-text {
+        width: 35vw;
+        display: flex;
+        color: black;
+        flex-direction: column;
+        //justify-content: flex-start;
+        align-items: start;
+        font-family: 'Prompt', sans-serif;
+        font-weight: bold;
+
+        &-1 {
+            font-size: 3em;
+        }
+
+        &-2 {
+            color: blue;
+            font-size: 3em;
+        }
+    }
+
+    &-formDiv {
+        display: flex;
+        //background:radial-gradient(circle at 50% 50%, rgba(0,0,255,1), rgba(0,0,0,0));
+    }
 
     &-form {
         height: 40vh;
+        width: 35vw;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+    
+
+
+        &-name {
+            width: 25vw;
+            height: 5vh;
+            border-radius: 15px;
+            border: 1.5px solid;
+            border-color: blue;
+           
+        }
+
+        &-email {
+            width: 25vw;
+            height: 5vh;
+            border: solid 1px;
+            border-radius: 10px;
+        }
+
+        &-message {
+            width: 25vw;
+            height: 10vh;
+            border: solid 1px;
+            border-radius: 10px;
+        }
 
         &-div {
 
 
             &-button {
                 background: linear-gradient(180deg, #3037bd 26.71%, rgb(40, 38, 177) 99.36%);
-                border: none;
+                border: solid 1px;
+                border-color: transparent;
                 border-radius: 34px;
                 box-shadow: 0 5px 24px 3px rgb(4, 0, 255);
                 color: #fff;
