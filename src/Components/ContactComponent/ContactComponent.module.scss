@@ -107,8 +107,8 @@
 
         &-name {
             width: 25vw;
-            height: 5vh;
-            border-radius: 15px;
+            height: 2.2em;
+            border-radius: 5px;
             border: 1.5px solid;
             border-color: blue;
            
@@ -116,16 +116,21 @@
 
         &-email {
             width: 25vw;
-            height: 5vh;
+            height: 2.2em;
             border: solid 1px;
-            border-radius: 10px;
+            border-radius: 5px;
+            border-color: blue;
+
         }
 
         &-message {
             width: 25vw;
-            height: 10vh;
+            height: 6em;
             border: solid 1px;
-            border-radius: 10px;
+            border-radius: 5px;
+            border-color: blue;
+            resize: none;
+
         }
 
         &-div {
